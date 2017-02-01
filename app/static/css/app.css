@@ -1,0 +1,46 @@
+body {
+    padding-left: 15px;
+}
+h1 {
+    color:#4286f4;
+    font-family: 'cursive';
+    padding:  0px 380px;
+
+}
+h3 {
+    color:#f25b09;
+    font-family: 'monospace';
+    
+
+}
+
+ .questions{
+      font-size: large;
+      background-color:#a09c9a;
+}
+
+.select{
+      font-size: medium;
+   
+      background-color:#e5e569;
+}
+
+h2
+{
+	font-family: 'Arvo';
+        color: #cc0404;
+        font-size: xx-large;
+        
+}
+
+
+.submit {
+  background-color: LIGHTSEAGREEN;
+  color: black;
+  padding: 8px 25px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

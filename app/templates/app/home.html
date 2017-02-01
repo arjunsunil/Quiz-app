@@ -1,0 +1,16 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Online Quiz</title>
+    </head>
+    <body>
+	<link rel="stylesheet" href="//ma3xcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+ 	<link rel="stylesheet" href="{% static 'css/app.css' %}">
+	<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <h1>Online Quiz</h1>
+      <h2>10 Marks for Each Question</h2>
+      {%block content%}
+      {%endblock %}
+    </body>
+</html>

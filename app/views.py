@@ -1,0 +1,26 @@
+from django.shortcuts import render
+from django.shortcuts import redirect
+from django.utils import timezone
+from django.http import HttpResponse
+from .models import Question
+from django.views.decorators.csrf import csrf_exempt
+
+
+def home(request):
+    questions = Question.objects.all
+    return render(request, 'app/index.html', {'questions': questions})
+
+def results(request):
+    questions = Question.objects.all() 
+    score = 0
+    for question in questions:
+        answer = question.correct_ans 
+        entered_answer = request.POST.get(str(question.number)) 
+        if(entered_answer == answer): 
+            score+=1 
+    score*=10
+    return render(request, 'app/results.html', {'score':score})
+    	
+  
+
+    
